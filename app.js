@@ -239,7 +239,8 @@ class SQLMapGenerator {
         this.setStandardConfigItem(config, '-g');
         this.setStandardConfigItem(config, '-m');
         this.setStandardConfigItem(config, '-l');
-        
+
+        const burpFile = document.getElementById('burpFile').value.trim();
         const burpFileScope = document.getElementById('burpFileScope').value.trim();
         if (burpFileScope) config['--scope'] = burpFileScope;
         if (burpFileScope && !burpFile) document.getElementById('burpFile').value = "burp.txt";
