@@ -766,7 +766,7 @@ class SQLMapGenerator {
                     }
                     else if (param === '--technique') {
                         // Handle technique checkboxes
-                        ['B', 'E', 'U', 'S', 'T'].forEach(tech => {
+                        ['B', 'E', 'U', 'S', 'T', 'Q'].forEach(tech => {
                             const techElement = document.getElementById('tech' + tech);
                             if (techElement) {
                                 techElement.checked = value.includes(tech);
